@@ -1,0 +1,11 @@
+function taxCalculator (price, state){
+  if (state === 'NY'){
+    let priceTax = price * .04;
+    let total = priceTax + price;
+    return total;
+  } else if (state === 'NJ'){
+    let priceTax = price * .06625;
+    let total = priceTax + price;
+    return total;
+  }
+}
